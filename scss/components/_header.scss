@@ -1,0 +1,33 @@
+/*...........header...............*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: brown;
+
+    nav¨ {
+        ul {
+            a {
+                text-decoration: none;
+                color: rgb(13, 15, 15);
+                font-size: 30px;
+            }
+        }
+    }
+
+    a {
+
+        text-decoration: none;
+        color: rgb(13, 15, 15);
+        font-size: 30px;
+
+
+    }
+
+}
+
+.t {
+    font-style: oblique;
+    font-size: 65px;
+    text-align: left
+}

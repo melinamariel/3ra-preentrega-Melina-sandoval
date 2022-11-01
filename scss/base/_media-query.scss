@@ -1,0 +1,57 @@
+
+@media screen and (max-width:768px){
+    .grid-productos{
+        grid-template-columns: 3fr;
+        grid-template-rows: 200px 100px 400px 150px;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";
+    }
+   
+}
+
+    @media screen and (max-width:480px){
+
+    .grid-productos{
+        grid-template-columns: 2fr;
+        grid-template-rows: 200px 100px 400px 150px;
+        grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+    }
+
+   
+    }
+
+
+
+
+@media screen and (max-width:768px){
+    
+.metodoDePago{
+    grid-template-columns: 3fr;
+    grid-template-rows: 200px 100px 400px 150px;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+}
+}
+
+
+@media screen and (max-width:480px){
+
+.metodoDePago{ 
+grid-template-columns: 2fr;
+grid-template-rows: 200px 100px 400px 150px;
+grid-template-areas: 
+"header header"
+"main main"
+"footer footer";
+}
+}
+

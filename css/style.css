@@ -8,15 +8,14 @@
 /*..index..*/
 
 /*.......heder......*/
-header{
-    background-color: brown;
-}
+
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
+    background-color: brown;
+    grid-template-areas: 
+    "header";
 }
 
 header nav ul li{
@@ -25,6 +24,8 @@ header nav ul li{
     margin: 15px;
     font-size: 55px;
     font-style:italic;
+ font-size: 30px;
+    text-align: right;
     
 } 
  header nav ul li a{
@@ -35,35 +36,16 @@ header nav ul li{
     
     
 }
-.t{
-    font-size: 65px;
-    text-align:left
-    
-}
+
 
 .t{
     font-style:oblique;
+    font-size: 65px;
+    text-align:left
 }
 
-    
 
 
-.e{
-    font-size: 35px;
-    text-align: center;
-}
-
-header nav ul li{
-    text-align: right;
-    
-}
-
-header section{
-
-font-size:35px ;
-text-align: center;
-
-}
 
 
 /*....main....*/
@@ -83,8 +65,10 @@ text-align: center;
 }
 
 
-.hero div h2{
- color: white;
+.hero h2{
+ font-size: 45px;
+ font-weight: 55px;
+ font-style: initial;
 }
 
 
@@ -125,15 +109,13 @@ text-align: center;
     height: 100px;
     padding: 35px;
     border-radius: 100%;
-    sombra de caja: 28px 28px 21px 0px rgba(186,185,185,0.75);
-    -webkit-caja-sombra: 28px 28px 21px 0px rgba(186,185,185,0.75);
-    -moz-box-shadow: 28px 28px 21px 0px rgba(186,185,185,0.75);
+   
 
     }
-.fixed div{
-    margin-top: 50px;
+/* .fixed div{
+    margin-top: 50px; */
     
-}
+
 
 .metodoDePago div{
     display: flex;
@@ -142,9 +124,11 @@ text-align: center;
     
     background-color: brown;
     width: 100%;
+    grid-template-areas: 
+    main;
     
 
-   
+
      
 }
 .pago div{
@@ -206,9 +190,9 @@ text-align: center;
 .grid-item h2{
     font-size: 15px;
 }
-.sumate div{
+/* .sumate div{
     margin: 20px;
-}
+} */
 
 /*........footer.....*/
 
@@ -261,14 +245,19 @@ text-align: center;
 /*........MAIN..........*/
 
 .veterinaria h2{
-    background-color:azure;
-    font-size: 35px;
-    
+
     padding: 20px;
+
 }
   
-.veterinaria{
+.veterinaria {
+    display: flex;
+    flex-direction: column;
     font-size: 20px;
+    text-align: center;
+   
+    text
+    
 }
 
 .peluqueria{
@@ -283,7 +272,7 @@ text-align: center;
 }
 .peluqueria{
 
-    margin: 25px;
+    /* margin: 25px; */
 }
 .contactos{
 
@@ -295,9 +284,67 @@ text-align: center;
 }
 
 
+@media screen and (max-width:768px){
+    .grid-productos{
+        grid-template-columns: 3fr;
+        grid-template-rows: 200px 100px 400px 150px;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";
+    }
+    /* .metodoDePago{
+        grid-template-columns: 3fr;
+        grid-template-rows: 200px 100px 400px 150px;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";
+    } */
+}
 
+    @media screen and (max-width:480px){
 
+    .grid-productos{
+        grid-template-columns: 2fr;
+        grid-template-rows: 200px 100px 400px 150px;
+        grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+    }
 
     
+    }
 
 
+
+
+
+@media screen and (max-width:768px){
+    
+.metodoDePago{
+    grid-template-columns: 3fr;
+    grid-template-rows: 200px 100px 400px 150px;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+}
+}
+
+
+@media screen and (max-width:480px){
+
+.metodoDePago{ 
+grid-template-columns: 2fr;
+grid-template-rows: 200px 100px 400px 150px;
+grid-template-areas: 
+"header header"
+"main main"
+"footer footer";
+}
+}

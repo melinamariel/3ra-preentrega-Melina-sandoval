@@ -1,0 +1,10 @@
+
+
+#archivo de texto
+
+*.text
+
+
+#carpeta node_modules
+
+node_modules/
