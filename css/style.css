@@ -1,5 +1,4 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -9,39 +8,45 @@
 
 /*.......heder......*/
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: brown;
-    grid-template-areas: 
-    "header";
+    background-color: rgb(0, 0, 0);
+    grid-template-areas:
+        "header";
+
 }
 
-header nav ul li{
+header nav ul li {
 
     display: inline-block;
     margin: 15px;
     font-size: 55px;
-    font-style:italic;
- font-size: 30px;
+    font-style: italic;
+    font-size: 30px;
     text-align: right;
-    
-} 
- header nav ul li a{
+
+}
+
+header nav ul li a {
 
     text-decoration: none;
-    color: rgb(13, 15, 15);
+    color: rgb(255, 255, 255);
     font-size: 30px;
-    
-    
+
+
 }
 
 
-.t{
-    font-style:oblique;
+.t {
+    font-style: oblique;
     font-size: 65px;
-    text-align:left
+    text-align: left
+}
+
+.t {
+    color: pink;
 }
 
 
@@ -53,298 +58,428 @@ header nav ul li{
 
 /*..perros..*/
 
-.hero div h1{
-  color: white;
-  font-size: 80px;
+.hero div h1 {
+    color: white;
+    font-size: 80px;
 }
 
 
-.paginas nav ul li a{
- color: white;
- text-align: center;
+.paginas nav ul li a {
+    color: white;
+    text-align: center;
 }
 
 
-.hero h2{
- font-size: 45px;
- font-weight: 55px;
- font-style: initial;
-}
-
-
-.hero{
-    background-image: url(../images/pexels-krystian-bęben-1404727.jpg);
+.hero h2 {
+    font-size: 45px;
+    margin-right: 50%;
+    padding-top: 15%;
     
+}
+
+
+.hero {
+    background-image: url(../images/3.jpg);
+    background-attachment: fixed;
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     font-weight: 100;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    color:cadetblue;
+    color: rgb(0, 0, 0);
     font-size: 40px;
-    background-repeat:no-repeat;
-    background-position:center;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    
-    
-}
 
-.hero a{
-   text-decoration: none;
-   color:white;
-   background-color:rgba(0, 0, 0, 0.247) ;
-   margin-bottom: 50%;
-   font-size: 30px;
+
 }
 
 
-.fixed{
+.sumate a {
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    background-color: rgba(100, 102, 100, 0.247);
+
+    font-size: 30px;
+    display: flex;
+    align-items: flex-start;
+
+}
+
+
+.fixed {
     position: fixed;
     right: 3%;
     bottom: 20%;
-    background-color: chocolate;
-    font-size: 20px;
-    text-align: center;
     width: 150px;
     height: 100px;
     padding: 35px;
     border-radius: 100%;
-   
 
-    }
-/* .fixed div{
-    margin-top: 50px; */
-    
+}
 
 
-.metodoDePago div{
+
+.metodoDePago div {
     display: flex;
-    justify-content:space-evenly;
-    margin: 50px;
-    
-    background-color: brown;
+    justify-content: space-evenly;
+    margin: left 5px;
     width: 100%;
-    grid-template-areas: 
-    main;
-    
+    height: 10vh;
+    background-color: rgb(248, 196, 180);
+    margin-top: 20px;
 
 
-     
+
 }
-.pago div{
+
+.metodoDePago {
+    height: 100%;
+}
+
+.pago div {
     display: flex;
-    justify-content:space-evenly;
-    margin: 50px;
-    background-color: brown;
+    justify-content: space-evenly;
+    background-color: rgb(248, 196, 180);
+    margin: left 5px;
     width: 100%;
+    height: 10vh;
+    margin-top: 20px;
+}
 
+
+.galeria div img {
+
+    width: 250px;
+    height: 250px;
+    display: inline-block;
 
 }
 
 
-.galeria div img{
-    
-   width: 250px ;
-   height: 250px;
-   display: inline-block;
-   
-}
 
 
-.galeria{
-    text-align:center;
+.galeria {
 
-    
-}
-
-
-.galeria div{
     display: inline-block;
     padding: 35px;
     padding-right: 70px;
-    border: 2px black solid;
     margin: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+     background-color: rgb(248, 196, 180);
+    margin-top: 3%;
 
 }
-.grid-productos{
-    width: 100%;
-    margin-top: 50px;
+
+.galeria img {
+
+    margin-top: 5%;
+}
+
+.galeria h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin-top: 3%;
+    padding: 4px 4px 4px 4px;
+
+}
+
+.galeria h3 {
+
+    color: rgb(10, 10, 10);
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+
+}
+
+.descuento {
+
+    margin-bottom: 5%;
+    margin-left: 7%;
+
+}
+
+.piloto {
+
+    display: inline-block;
+    padding: 35px;
+    padding-right: 70px;
+    margin: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(248, 196, 180);
+    margin-top: 3%;
+
+
+
+}
+
+.piloto h2 {
+    background-color: white;
+    margin-top: 3%;
+    padding: 4px 4px 4px 4px;
+}
+
+.grid-productos {
+    /* width: 100%; */
+    
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-auto-rows: 250px;
-    gap: 55px;
+    gap: 65px;
+    /* height: 150vh; */
+    
 
 }
 
-.grid-productos div img{
-    width: 100%;
-    height: 100%;
+.grid-productos {
+
+    color: #444444;
+    background: #FFFFFF;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+    color: #444444;
+    background: #FFFFFF;
+}
+
+
+.grid-productos div img {
+    /* width: 100%;
+    height: 100%; */
     object-fit: cover;
+    box-shadow: 10px 9px 13px 0px rgba(86, 143, 86, 0.75);
+    -webkit-box-shadow: 10px 9px 13px 0px rgba(86, 143, 86, 0.75);
+    -moz-box-shadow: 10px 9px 13px 0px rgba(86, 143, 86, 0.75);
+
 
 }
 
-.grid-productos div h2{
+.grid-productos div h2 {
     font-size: 15px;
 }
 
-.grid-item h2{
+
+
+.grid-item h2 {
     font-size: 15px;
+
 }
-/* .sumate div{
-    margin: 20px;
-} */
 
-/*........footer.....*/
 
-.footer section a{
+
+.footer section a {
 
     width: 30%;
     height: 30vh;
     font-size: 50px;
-    background-repeat:no-repeat;
-    
-    
+    background-repeat: no-repeat;
+
+
 }
 
-.footer{
-    background-color: rgb(161, 189, 163);
+.footer {
+    background-color: rgb(0, 0, 0);
     display: flex;
-    justify-content:space-around ;
-    align-items:center;
+    justify-content: space-around;
+    align-items: center;
     padding: 20px;
-    
+    color: white;
+
 }
 
-.footer h3{
-    font: size 35px; 
+
+
+
+.footer div a {
+    margin-right: 20px;
+}
+
+
+
+.footer div h2 {
+
+    margin-right: 22px;
 }
 
 /*......perros..........*/
 
-.pago div img{
 
-    display: inline-block;
+
+.consulta h1 {
+    text-align: center;
+    background-color:  rgb(248, 196, 180);
 }
 
-/*.......main...........*/
+.cuestionario {
+    width: 800px;
+    height: 50vh;
+    margin-left: 20%;
 
-
-
-.tag div{
-    
-    background-color: brown;
-    font-size: 25px;
-    background-position: center;
-    color: white;
-    margin-top: 60px;
 }
 
+.col-auto {
+    margin-top: 3%;
+}
+
+.tag{
+    margin-top: 5%;
+}
 
 /*.......SERVICIOS......*/
 
 /*........MAIN..........*/
 
-.veterinaria h2{
+.veterinaria h2 {
 
     padding: 20px;
 
 }
-  
+
 .veterinaria {
-    display: flex;
-    flex-direction: column;
+
     font-size: 20px;
-    text-align: center;
-   
-    text
-    
+    text-align:
+
 }
 
-.peluqueria{
+
+.flex-container {
+    flex-direction: column;
+
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+    background-color: rgb(248, 196, 180);
+}
+
+.flex-container img {
+
+    width: 90vh;
+
+}
+
+.horarios {
+    margin-top: 20px;
+}
+
+.peluqueria {
     font-size: 20px;
     font-weight: 300;
-    
+
 }
 
-.peluqueria div img{
+.peluqueria div img {
 
     margin: 25px;
 }
-.peluqueria{
 
-    /* margin: 25px; */
+.peluqueriaimg {
+    background-color: rgb(248, 196, 180);
+
 }
-.contactos{
+
+.cortedepelo {
+
+    background-color: rgb(248, 196, 180);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.video{
+    margin-left: 8%;
+    margin-bottom: 2%;
+}
+
+.video1{
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+.contactos {
 
     display: flex;
-    justify-content:space-around ;
-    align-items:center;
+    justify-content: space-around;
+    align-items: center;
     padding: 20px;
-    
+
 }
 
 
-@media screen and (max-width:768px){
-    .grid-productos{
+@media screen and (max-width:768px) {
+    .grid-productos {
         grid-template-columns: 3fr;
         grid-template-rows: 200px 100px 400px 150px;
-        grid-template-areas: 
-        "header header header"
-        "nav nav nav"
-        "main main main"
-        "footer footer footer";
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "main main main"
+            "footer footer footer";
     }
-    /* .metodoDePago{
-        grid-template-columns: 3fr;
-        grid-template-rows: 200px 100px 400px 150px;
-        grid-template-areas: 
-        "header header header"
-        "nav nav nav"
-        "main main main"
-        "footer footer footer";
-    } */
+
+   
 }
 
-    @media screen and (max-width:480px){
+@media screen and (max-width:480px) {
 
-    .grid-productos{
+    .grid-productos {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px 400px 150px;
+        grid-template-areas:
+            "headr"
+            "main"
+            "footer";
+
+}
+
+    }
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+    .metodoDePago {
         grid-template-columns: 2fr;
         grid-template-rows: 200px 100px 400px 150px;
         grid-template-areas:
-        "header header"
-        "main main"
-        "footer footer";
+            "header header"
+            "nav nav"
+            "main main"
+            "footer footer";
+    }
+}
+
+
+@media screen and (max-width:480px) {
+
+    .metodoDePago {
+        grid-template-columns: 2fr;
+        grid-template-rows: 200px 100px 400px 150px;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer";
+    }
+}
+
+
+/*nuevas media*/
+@media screen and (max-width:768){
+    .grid-galeria{
+        
     }
 
-    
-    }
-
-
-
-
-
-@media screen and (max-width:768px){
-    
-.metodoDePago{
-    grid-template-columns: 3fr;
-    grid-template-rows: 200px 100px 400px 150px;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer";
-}
-}
-
-
-@media screen and (max-width:480px){
-
-.metodoDePago{ 
-grid-template-columns: 2fr;
-grid-template-rows: 200px 100px 400px 150px;
-grid-template-areas: 
-"header header"
-"main main"
-"footer footer";
-}
 }

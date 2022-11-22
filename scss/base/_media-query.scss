@@ -1,13 +1,16 @@
 
 @media screen and (max-width:768px){
     .grid-productos{
-        grid-template-columns: 3fr;
-        grid-template-rows: 200px 100px 400px 150px;
+        grid-template-columns: 2fr;
+        grid-template-rows: 150px 100px 400px 150px;
         grid-template-areas: 
-        "header header header"
-        "nav nav nav"
-        "main main main"
-        "footer footer footer";
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
+        width: 20% ;
+        height:40% ;
+              
     }
    
 }
@@ -15,18 +18,18 @@
     @media screen and (max-width:480px){
 
     .grid-productos{
-        grid-template-columns: 2fr;
+        grid-template-columns: 1fr;
         grid-template-rows: 200px 100px 400px 150px;
         grid-template-areas:
-        "header header"
-        "main main"
-        "footer footer";
+        "header"
+        "main"
+        "footer";
+
+        
     }
 
+  
    
-    }
-
-
 
 
 @media screen and (max-width:768px){
@@ -55,3 +58,14 @@ grid-template-areas:
 }
 }
 
+
+
+/*nuevas media*/
+@media screen and (max-width:768){
+        .grid-productos{
+            margin: 100px;
+
+        }
+    }
+
+}

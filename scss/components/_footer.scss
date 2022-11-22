@@ -1,13 +1,25 @@
-/*......footer......*/
+/*......footer..inicio....*/
 
 .footer {
-    background-color: rgb(161, 189, 163);
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
+    color: white;
 
-    h3 {
-        font: size 35px;
+    h2 {
+        margin-right: 22px;
     }
+
+    a {
+
+        width: 30%;
+        height: 30vh;
+        font-size: 50px;
+        background-repeat: no-repeat;
+        margin-right: 20px;
+
+    }
+
 }
